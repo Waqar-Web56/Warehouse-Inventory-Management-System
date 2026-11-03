@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const crud = require('../services/crud');
+const crud =require('./services/crud');
 const S = require('../validators/schemas');
 
 router.get('/health', (req, res) => res.json({ success: true, status: 'ok' }));
